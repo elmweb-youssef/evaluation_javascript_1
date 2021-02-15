@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>jeu de dés</title>
+        <link rel="stylesheet" href="styles/style.css">
+        <script src="scripts/game_script.js"></script>
+    </head>
+
+    <body>
+        <div id="launchGame">
+            <h1>NEW GAME</h1>
+        </div>
+
+        <div id="players">
+            <div id="player_1"><h2>PLAYER 1</h2><span>Global Score :</span><span id="score_player_1"></span></div>
+            <picture id="container_dice"><img src="images/dice_faces.png" id="face_dice"></picture>
+            <div id="player_2"><h2>PLAYER 2</h2><span>Global Score :</span><span id="score_player_2"></span></div>
+        </div>
+
+        <div id="current_score">
+            <div id="current_score_1"><p>Current Score<span id="round_player_1"></span></p></div>
+                <div id="controls_game">
+                    <h3 id="roll_dice"><img src="images/re_game.png">ROLL DICE</h3>
+                    <h3 id="hold"><img src="images/charge_score.png">HOLD</h3>
+                </div>
+            <div id="current_score_2"><p>Current Score<span id="round_player_2"></span></p></div>
+        </div>
+    </body>
+
+</html>

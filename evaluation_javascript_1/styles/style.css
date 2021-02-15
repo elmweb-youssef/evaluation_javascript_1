@@ -1,0 +1,108 @@
+@font-face {
+    font-family: "Lato";
+    src: url("../fonts/Lato/Lato-Regular.ttf");
+   }
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Lato";
+    background-color: silver;
+    background: linear-gradient(to left, white, white 50%, rgb(228, 227, 227) 50%, rgb(228, 227, 227));
+    text-align: center;
+    color: black;
+    font-size: 1.15em;
+}
+
+#players, #final_score, #current_score, #current_score_1, #current_score_2, #controls_game {
+    display: flex;
+}
+
+#players, #final_score, #current_score {
+    flex-direction: row;
+    justify-content:space-evenly;
+    align-items: center;
+}
+#players {
+    justify-content:space-around;
+    margin: 1% 1% 10%;
+}
+
+#current_score_1, #current_score_2 {
+    position: relative;
+    border-radius: 20%;
+    padding: 2%;
+    background-color: tomato;
+    color: white;
+}
+
+#controls_game {
+    flex-direction: column;
+    max-width: 33%;
+}
+
+h1 {
+    width: 40%;
+    margin: 1% auto 5%;
+    font-size: 1.5rem;
+}
+h1::before {
+    content: "⊕ ";
+    font-size: 2rem;
+    align-items: center;
+    color: tomato;
+}
+
+h2 {
+    height: 30px;
+    line-height: 30px;
+    margin-bottom: 50%;
+    font-weight: bold;
+}
+
+h3 {
+    margin: 5% 0;
+}
+
+span {
+    display: block;
+    margin-top: 5%;
+    font-size: 1.5em;
+    color: black;
+    font-weight: bold;
+}
+
+img:not(#face_dice) {
+    max-width: 10%;
+    vertical-align: middle;
+    margin-right: 3%;
+}
+
+#container_dice {
+    position: relative;
+    width: 127px;
+    height: 120px;
+    border: 3.5px solid gray;
+    border-radius: 20%;
+    overflow: hidden;
+}
+
+#face_dice {
+    position: absolute;
+    min-width: 889px;
+    left: 0px;
+}
+
+sup {
+    position: absolute;
+    color: white;
+    right: 2em;
+    font-size: 13px;
+}
+
+
+
+
+
+
+
