@@ -230,6 +230,31 @@
 
 /************************** Process score Functions ******************************/  
 
+
+
+/************** Process (victory, reset score, reset game) Functions *************/
+
+        function victoryGame(player, table) {
+            player.firstChild.style.color = "green";
+            player.lastChild.textContent = "Bravo ! " + player_2.getAttribute("id") + " à gagné la partie";
+            player.lastChild.style.fontSize = "15px";
+            player.lastChild.style.color = "green";
+            table.length = 0;
+        }
+
+        function resetScore(player) {
+            player.firstChild.style.color = "inherit";
+            player.lastChild.style.fontSize = "inherit";
+            player.lastChild.style.color = "inherit";
+            player.lastChild.textContent = "";
+        }
+
+        function resetGame() {
+            return window.location.reload();
+        }
+
+/************** Process (victory, reset score, reset game) Functions *************/
+
         
         launch.addEventListener("click", initPlayerDefault);    
 
